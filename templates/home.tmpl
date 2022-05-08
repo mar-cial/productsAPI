@@ -1,7 +1,26 @@
 {{define "content"}}
 <main class="main-banner">
-  <h1>You did it my boy. This is main.</h1>
-  <a href="/api/products">products</a>
-  <a href="/api/products/2747">single product</a>
+  <h1>Products API</h1>
+  <p>A free, open source API to experiment with your applications.</p>
+  <p>Features 3000 individual products, split into 10 different categories.</p>
+
+  <table class="api-table">
+    <tr>
+      <th>METHOD</th>
+      <th>PATH</th>
+      <th>DESCRIPTION</th>
+    </tr>
+
+    <tr>
+      <td class="api-method">GET</td>
+      <td>/api/products</td>
+      <td>Serves paginated result of products</td>
+    </tr>
+    <tr>
+      <td class="api-method">GET</td>
+      <td>/api/products/{id}</td>
+      <td>Serves a single product, where id is an int 1-3000</td>
+    </tr>
+  </table>
 </main>
 {{ end }}

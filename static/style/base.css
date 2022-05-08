@@ -21,6 +21,10 @@ body {
   padding: 1em;
 }
 
+.main-banner h1 {
+  font-size: 3em;
+}
+
 .main-header {
   padding: 1em;
   display: -webkit-box;
@@ -44,5 +48,29 @@ body {
 .main-navbar a {
   color: red;
   text-decoration: none;
+}
+
+.api-table {
+  padding: 1.5em 0em;
+}
+
+.logo-container img {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: white;
+  padding: 0.2em;
+  border-radius: .5em;
+}
+
+.api-table td, th {
+  font-size: 14px;
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: .2em;
+}
+
+.api-method {
+  font-weight: 600;
+  background-color: #006100;
 }
 /*# sourceMappingURL=base.css.map */

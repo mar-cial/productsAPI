@@ -19,6 +19,9 @@ body {
 
 .main-banner {
   padding: 1em;
+  h1 {
+    font-size: 3em;
+  }
 }
 
 .main-header {
@@ -36,4 +39,29 @@ body {
     color: red;
     text-decoration: none;
   }
+}
+.api-table {
+  padding: 1.5em 0em;
+}
+
+.logo-container {
+  img {
+    height: 2.8em;
+    width: 2.8em;
+    background-color: white;
+    padding: 0.2em;
+    border-radius: .5em;
+  }
+
+}
+.api-table td, th {
+  font-size: 14px;
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: .2em;
+}
+
+.api-method {
+  font-weight: 600;
+  background-color: rgb(0, 97, 0);
 }

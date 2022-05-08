@@ -10,9 +10,10 @@ type Product struct {
 	Name        string  `json:"name"`
 	Description string  `json:"description"`
 	Price       float64 `json:"price"`
-	ID          string  `json:"id"`
+	Sku         string  `json:"sku"`
 	StoreID     string  `json:"store_id"`
 	Inventory   int64   `json:"inventory"`
+	Category    string  `json:"category"`
 }
 
 func LoadProducts() ([]Product, error) {
