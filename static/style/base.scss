@@ -1,0 +1,39 @@
+* {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.main-banner {
+  padding: 1em;
+}
+
+.main-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navbar {
+  display: flex;
+  gap: 0.4em;
+
+  a {
+    color: red;
+    text-decoration: none;
+  }
+}
