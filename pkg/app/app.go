@@ -27,12 +27,18 @@ func (a *App) Home(w http.ResponseWriter, r *http.Request) {
 
 // api endpoints
 func (a *App) GetAllProducts(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+
 	encoder := json.NewEncoder(w)
 	encoder.SetIndent("", "  ")
-	encoder.Encode(a.Products[:100])
+	encoder.Encode(a.Products)
 }
 
 func (a *App) GetSingleProduct(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+
 	vars := mux.Vars(r)
 	encoder := json.NewEncoder(w)
 	encoder.SetIndent("", "  ")

@@ -15,6 +15,5 @@ func AddRouter(app *app.App) (*mux.Router, error) {
 	api := mux.PathPrefix("/api").Subrouter().StrictSlash(true)
 	api.HandleFunc("/products", app.GetAllProducts).Methods(http.MethodGet)
 	api.HandleFunc("/products/{id:[0-9]+}", app.GetSingleProduct).Methods(http.MethodGet)
-
 	return mux, nil
 }

@@ -43,10 +43,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 0.4em;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .main-navbar a {
-  color: red;
   text-decoration: none;
 }
 
@@ -67,10 +69,20 @@ body {
   border: 1px solid white;
   border-collapse: collapse;
   padding: .2em;
+  font-family: monospace;
+  text-align: center;
 }
 
 .api-method {
   font-weight: 600;
-  background-color: #006100;
+  color: #86f686;
+}
+
+.coffee-cup {
+  height: 1.3em;
+  width: 1.3em;
+  padding: 0.2em;
+  background-color: white;
+  border-radius: 0.2em;
 }
 /*# sourceMappingURL=base.css.map */

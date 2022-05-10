@@ -34,9 +34,10 @@ body {
 .main-navbar {
   display: flex;
   gap: 0.4em;
+  align-items: baseline;
+
 
   a {
-    color: red;
     text-decoration: none;
   }
 }
@@ -45,6 +46,7 @@ body {
 }
 
 .logo-container {
+
   img {
     height: 2.8em;
     width: 2.8em;
@@ -59,9 +61,19 @@ body {
   border: 1px solid white;
   border-collapse: collapse;
   padding: .2em;
+  font-family: monospace;
+  text-align: center;
 }
 
 .api-method {
   font-weight: 600;
-  background-color: rgb(0, 97, 0);
+  color: rgb(134, 246, 134);
+}
+
+.coffee-cup {
+  height: 1.3em;
+  width: 1.3em;
+  padding: 0.2em;
+  background-color: white;
+  border-radius: 0.2em;
 }
